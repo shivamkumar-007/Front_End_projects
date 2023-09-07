@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+html,body,main{
+    width: 100%;
+    height: 100%;
+}
+main{
+    display: flex;
+}
+
+section{
+    display: flex;
+   width: 90%;
+   height: 100vh;
+}
+.left{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background-color: #816569;
+    overflow: hidden;
+}
+.right{
+    position: relative;
+    width: 50%;
+    height:100vh;
+    background-image: url(https://images.pexels.com/photos/7319288/pexels-photo-7319288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+}
+#left-nav{
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.figure-div{
+    position: absolute;
+    top:50%;
+    left:54%;
+    transform: translate(-50%,-55%);
+    width: 45%;
+    height: 55%;
+    background-image: url(https://images.pexels.com/photos/7319289/pexels-photo-7319289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    /* background-position: center; */
+    background-size:cover;
+    filter: brightness(0.9);
+}
+#left-nav h2{
+    text-transform: uppercase;
+    color: #fff;   
+    font-size: .6rem;
+    display: inline-block;
+    margin-right: 20%;
+    font-weight: 600;
+    letter-spacing:.1rem;
+}
+#left-nav h4{
+    text-transform:uppercase;
+    color: #fff;   
+    font-size: .45rem;
+    display: inline-block;
+    font-weight:600
+
+}
+.text-below-image{
+    display:flex;
+    position:absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 20%;
+}
+.parts{
+    width: 25%;
+}
+.parts h5{
+    color: #fff;
+    margin-top: .5rem;
+    font-size: .5rem;
+}
+.para{
+    color: #fff;
+    margin-top: .5rem;
+    width: 65%;
+    font-size: .46rem;
+}
+#scroll{
+    position: absolute;
+    bottom: -2%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    transform-origin:0% 50% ;
+    transform: rotate(-90deg);
+}
+
+#scroll h4{
+    color: #fff;
+    font-size: .45rem;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    font-weight: 400;
+
+}
+.line{
+    width: 100px;
+    height: .05rem;
+    background-color: #fff;
+}
+.mtext{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    user-select: none;
+    white-space: nowrap;
+    color: #fff;
+    line-height: 1;
+}
+.mtext h4{
+    font-family:"Voyage"    ;
+    font-size: 5.5rem;
+    font-weight: 100;
+}
+.mtext h5{
+    text-transform: capitalize;
+    font-family:"Voyage"    ;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+::selection{
+    color: #ffffff;
+    background-color: rgba(0,0,0,.5);
+}
+.card{
+    position: absolute;
+    bottom:10%;
+    right: -10%;
+    width: 35%;
+    height: 22%;
+    display: flex;
+}
+.card .icon{
+    font-size: 1.5rem;
+    padding: 2% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    background-color:#ffffff;
+}
+.card .icon i{
+    cursor: pointer;
+}
+.card .image{
+    width: 70%;
+    background-image:url(https://images.unsplash.com/photo-1637536701369-f815af927b59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1430&q=80);
+    background-size: cover;
+
+}
+#rightmost{
+    width: 10%;
+    height: 100vh;
+    padding:1% 1% ;
+    background-color: #816569;
+    color: #ffffff;
+}
+#rightmost i{
+    margin-left: 80%;
+    margin-top: 10%;
+
+}
+#rightmost .adiv{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+#rightmost .adiv .abdiv{
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform-origin: 0% 50%;
+    transform: rotate(90deg);
+}
+#rightmost .adiv .abdiv a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20%;
+    font-size: .6rem;
+}
