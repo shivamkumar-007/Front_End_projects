@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "roboto";
+}
+html,body{
+    width: 100vw;;
+    height: 100vh;
+}
+main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.left{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a9d3e1;
+    clip-path: polygon(0% 0%,60% 0%,40% 100%, 0% 100%);
+}
+.right{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#f0e7e2;
+    clip-path: polygon(60% 0%,100% 0%,100% 100%, 40% 100%);
+
+}
+.left img{
+    height: 55%;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+}
+.right img{
+    height: 110%;
+    position: absolute;
+    right: 6.5%;
+    bottom: 0;
+}
+.right h4{
+    font-size: 6.5rem;
+    position: absolute;
+    right: 6%;
+    top: 30%;
+    font-family: "baskerville";
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #6c6766;
+
+
+}
+nav{
+    position: absolute;
+    z-index: 1;
+    width: inherit;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .left-nav{
+    display: flex;
+    align-items: baseline;
+    margin-left: 10vw;
+}
+nav .left-nav .links{
+    display: flex;
+    margin-left: 4vw;
+    gap: 4vw;
+    text-transform: uppercase;
+
+}
+.links a{
+    font-weight: 200;
+    font-size: .8rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+.links .active-link{
+    font-weight: 500;
+}
+.links .active-link::before{
+    content: "";
+    width: 1.5vw;
+    height: .3vh;
+    position: absolute;
+    top: 4vh;
+    background-color: #ffffff;
+    
+}
+.left-nav i{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.right-nav {
+    display: flex;
+    margin-right: 4vw;
+    gap: 4vw;
+    align-items: baseline;
+    color: #6c6766;
+
+}
+.right-nav h4{
+    font-weight: 400;
+    font-size: .8rem;
+}
+.right-nav i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.left .heading{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: #ffffff;
+
+}
+.left .heading h1{
+    font-size: 4.5rem;
+    word-spacing: 1rem;
+    font-family: "didot";
+    margin-bottom: 4vh;
+}
+.left button{
+    border: .15rem solid #ffffff;
+    padding: .8rem 2.5rem;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: .9rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.left button i{
+    margin-left: 1rem;
+}
+
+.left .circles{
+    color: #ffffff;
+    font-size: .8rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    transform: rotate(90deg);
+}
+.left .circles #not-active {
+    opacity: .4;
+}
+.right button{
+    position: absolute ;
+    top: 52%;
+    left: 73.5%;
+    border: .15rem solid #ffffff;
+    padding: .8rem 2.5rem;
+    color: #f5cbc1;
+    background-color: white;
+    font-size: .9rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.right button i{
+    margin-left: 1rem;
+}
+.right .circles{
+    position: absolute;
+    top: 75%;
+    left: 95%;
+    transform: rotate(90deg);
+    color: #ffffff;
+    font-size: .8rem;
+
+}
+.right .circles #not-active {
+    opacity: .5;
+}
+
+@media (max-width: 500px) {
+    html,body{
+        width: 100vw;
+        min-height: 100vh;
+    }
+    main{
+        /* display: flex; */
+        width: 100vw;
+        height: inherit;
+        background-color: brown;
+    }
+    .left{
+        width: 100%;
+        height: 100vh;
+        background-color: antiquewhite;
+    }
+    .right{
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+    }
+} 
+@media(max-width: 768px){
+    .left img{
+        height: 55%;
+        position: absolute;
+        left: -20%;
+        bottom: 0;
+    }
+    .right img{
+        height: 110%;
+        position: absolute;
+        right: -15%;
+        bottom: 0;
+    }
+    .left .heading{
+        left:10%
+    }
+    .right h4{
+        font-size: 6rem;
+        position: absolute;
+        right: 1%;
+        top: 30%;
+        font-family: "baskerville";
+        text-transform: capitalize;
+        font-weight: 400;
+        color: #6c6766;
+    
+    
+    }
+    .right button{
+        left: 70%;
+
+    }
+    .right .circles{
+        left: 94%;
+    }
+}
+@media(min-width:1024px){
+    .left img{
+        height: 55%;
+        position: absolute;
+        left: -10%;
+        bottom: 0;
+    }
+    .right img{
+        height: 110%;
+        position: absolute;
+        right: -4%;
+        bottom: 0;
+    }
+}
