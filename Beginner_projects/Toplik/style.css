@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskerville";
+
+}
+html,body{
+    width: 100vw;
+    min-height: 100vh;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.left{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(126, 206, 179);
+    background-image: url(./Basketball.webp);
+    background-size: cover;
+    background-position: 0 50%;
+}
+.right{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.left h1{
+    position:absolute;
+    bottom: 6%;
+    left: 10%;
+    color: #fff;
+    font-size:5rem;
+    text-align:right;
+    letter-spacing: -.25rem;
+}
+.left h1 span{
+    font-size: 4rem;
+    font-weight: 250;
+    
+}
+h5{
+    letter-spacing:-.1rem ;
+}
+.right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f4e9;
+}
+.top-right{
+    width: 25%;
+    height:25%;
+    position:absolute;
+    left: 30%;
+    background-image: url(./Bycicle.webp);
+    background-position: right;
+    background-size: cover;
+    
+}
+.bottom-right{
+    width: 22%;
+    height:22%;
+    position:absolute;
+    bottom: 0%;
+    left: 48%;
+    background-image: url(./Backpack.webp);
+    background-position: right;
+    background-size: cover;
+}
+.middle-right1{
+    width: 27%;
+    height:48%;
+    position:absolute;
+    top: 33%;
+    left: 15%;
+    background-image: url(./shoes.webp);
+    background-position: right;
+    background-size: cover;
+}
+.middle-right2{
+    width: 9vw;
+    height:9vw;
+    display: inline-block;
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    border-radius: 50%;
+    background-color:transparent;
+    border: .1rem solid;
+}
+.text{
+    position: absolute;
+    top: 25%;
+    right: -15%;
+    transform: rotate(-90deg);
+    font-size: 2rem;
+}
+.text h2{
+    letter-spacing: .001rem;
+    font-weight: 400;
+}
+
+
+@media(max-width:500px){
+    main{
+        flex-direction: column;
+    }
+
+}
