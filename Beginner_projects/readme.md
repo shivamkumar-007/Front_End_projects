@@ -6,5 +6,5 @@ Animated labdibg page
 Homepage_design1
   https://front-end-projects-xmyx-homepage.vercel.app/
 
-Homepage_design2(fashion)
-  https://front-end-projects-lookbook.vercel.app/
+Insta_story card
+  https://front-end-projects-8fo7.vercel.app/
