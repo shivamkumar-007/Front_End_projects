@@ -81,6 +81,7 @@ html,body{
     width:65vw;
     height: 100vh;
     position: relative;
+    background-color: #f0f0f0;
 
 }
 .right .center{
@@ -137,7 +138,7 @@ html,body{
     border-radius: 1rem;
 }
 .right> img{
-    width: 300px;
+    width: 20vw;
     position: absolute;
     top: 50%;
     left:0;
