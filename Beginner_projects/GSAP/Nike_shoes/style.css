@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy,sans-serif;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+}
+.left{
+    width: 35vw;
+    height: 100vh;
+    background-color: rgb(218, 71, 45);
+    color: white;
+    position: relative;
+}
+.left .text{
+    position:absolute;
+    top: 20%;
+    left: 10%;
+
+}
+.text h1{
+    font-size: 2.5rem;
+    line-height: 1;
+    margin:0;
+}
+.text h1 span{
+    font-weight:100;
+}
+.text h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+.text p{
+    width: 60%;
+    font-size: .7rem;
+    line-height: 1.5;
+}
+.left button{
+    padding: .4rem 1.2rem;
+    border: none;
+    background-color: white;
+    color:  rgb(212, 59, 31);
+    font-size: .7rem;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+.left .btm{
+    width: 90%;
+    position:absolute;
+    bottom: 3%;
+    left: 0;
+    background-color: white;
+    padding: 1.2rem;
+    color: black;
+
+}
+.btm h3{
+    color: rgb(212, 59, 31);
+    font-size:.9rem ;
+}
+.btm p{
+    width: 80%;
+    font-size: .7rem;
+    margin-top: .3rem;
+    opacity: .7;
+}
+.right{
+    width:65vw;
+    height: 100vh;
+    position: relative;
+
+}
+.right .center{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 60%;
+}
+.center h1{
+    font-size: 2.5rem;
+    color: rgb(228, 85, 60);
+    margin: 0;
+    margin-top: .3rem;
+}
+.center h1 span{
+    color: black;
+    font-weight: 300;
+}
+.center h2{
+    font-size: .9rem;
+    font-weight: 100;
+    margin-bottom: .6rem;
+}
+.center h2 span{
+    font-weight: 700;
+}
+.center p{
+   font-size: .7rem;
+   width: 70%;
+   font-weight:400;
+   line-height: 1rem;
+   margin-bottom: 1.5rem;
+}
+.center #btns{
+    display: flex;
+    gap: 1rem;    
+}
+#btns button{
+    padding: .6rem 1.5rem;
+    font-size: .7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.center button:nth-child(1){
+    background-color: transparent;
+    color: rgb(212, 59, 31);
+    border: 1px solid rgb(212, 59, 31);
+    border-radius: .3rem;
+}
+.center button:nth-child(2){
+    background-color: rgb(212, 59, 31);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+.right> img{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translate(-50%,-50%);
+}
+
+.samples{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.samples .sample {
+    width:5vw;
+    overflow: hidden;
+    border-radius: 10px;   
+}
+.sample img{
+    width: 100%;
+}
+#sample-txt{
+    font-size: .9rem;
+    margin-top: .8rem;
+}
